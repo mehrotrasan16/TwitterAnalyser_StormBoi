@@ -39,7 +39,7 @@ public class TweetExtractionBolt extends BaseRichBolt {
 	      Status tweet = (Status) tuple.getValueByField("Tweet");
 	      for(HashtagEntity hashtag : tweet.getHashtagEntities()) {
 	         System.out.println("Hashtag: " + hashtag.getText());
-	         this.collector.emit(new Values(hashtag.getText(),1));
+	         this.collector.emit(new Values(hashtag.getText().toLowerCase(),1));
 	         //System.out.println("Emett2 emitted the stuff");
 	      }
 	   }

@@ -49,7 +49,7 @@ public class FileWriterBolt extends BaseRichBolt {
 	public void prepare(Map<String, Object> map, TopologyContext topologyContext, OutputCollector outputCollector) {
 		myCollector = outputCollector;
 		
-		System.out.println("Ya boi is inside fileWriterBolt.prepare()");
+		//System.out.println("Ya boi is inside fileWriterBolt.prepare()");
 		
 		try {
 			appender = new FileWriter(filename, true);
@@ -70,10 +70,10 @@ public class FileWriterBolt extends BaseRichBolt {
 
 	@Override
 	public void execute(Tuple tuple) {
-		System.out.println("FileWriterBolt executed");
-		System.out.println(count);
+		//System.out.println("FileWriterBolt executed");
+		//System.out.println(count);
 		System.out.println(tuple);
-		System.out.println(writer);
+		//System.out.println(writer);
 		if( tuple != null) {
 		writer.println((count++) + ":" + tuple.getStringByField("hashtag"));
 		writer.flush();

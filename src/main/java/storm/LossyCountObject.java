@@ -6,5 +6,6 @@ public class LossyCountObject {
 	public int freq;
 	public int delta;
 	public double timestamp;
+	
 
 }

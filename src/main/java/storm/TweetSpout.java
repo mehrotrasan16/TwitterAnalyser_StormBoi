@@ -140,7 +140,7 @@ public class TweetSpout extends BaseRichSpout {
 				// didn't get a message, sleep for a little bit
 				Utils.sleep(50);
 			} else {
-				System.out.println("Queue at "+ DateTime.now().toString() + message.getText());
+				//System.out.println("Queue at "+ DateTime.now().toString() + message.getText());
 				this.myCollector.emit(new Values(message));
 				//System.out.println("Emett emitted the stuff");
 			}
