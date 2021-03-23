@@ -1,5 +1,5 @@
 # TwitterAnalyser_StormBoi
-Project for CS535 - Big data (Spring 2020) - Samples Tweets to Calculate most frequently tweeted topics.
+Samples Tweets to Calculate most frequently tweeted topics, using Apache Storm, Apache Hadoop, Scala and the Twitter Tweetstream API.
 
 Work referenced from :
 - https://www.tutorialspoint.com/apache_storm/apache_storm_in_twitter.htm
